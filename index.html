@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Teamwork – PechaKucha Presentation</title>
+    <meta name="description" content="A premium PechaKucha presentation analyzing Starbucks teamwork, turnover solutions, and team discipline strategies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="coffee-cup-loader">
+                <div class="cup-body"></div>
+                <div class="cup-handle"></div>
+                <div class="steam s1"></div>
+                <div class="steam s2"></div>
+                <div class="steam s3"></div>
+            </div>
+            <div class="preloader-text">Loading Presentation</div>
+            <div class="preloader-bar"><div class="preloader-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particles"></canvas>
+
+    <!-- Ambient Glow -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Progress Bar -->
+    <div id="progress-bar">
+        <div id="progress-fill"></div>
+    </div>
+
+    <!-- Slide Counter -->
+    <div id="slide-counter">
+        <span id="current-slide-num">01</span>
+        <span class="counter-sep">/</span>
+        <span id="total-slides">24</span>
+    </div>
+
+    <!-- Speaker Badge -->
+    <div id="speaker-badge">
+        <div class="speaker-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+        </div>
+        <span id="speaker-name">Speaker 1</span>
+    </div>
+
+    <!-- Timer -->
+    <div id="timer-ring">
+        <svg viewBox="0 0 36 36">
+            <path class="timer-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+            <path class="timer-fill" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" stroke-dasharray="0, 100"/>
+        </svg>
+        <span id="timer-text">25s</span>
+    </div>
+
+    <!-- Main Presentation -->
+    <div id="presentation">
+
+        <!-- SLIDE 01 -->
+        <section class="slide active" data-slide="1" data-speaker="1" data-transition="zoom-fade">
+            <div class="slide-bg" style="background-image: url('images/slide01.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+                <div class="anim-element fade-up delay-1">
+</div>
+                <h1 class="anim-element fade-up delay-2 hero-title">
+                    People Stay<br><span class="text-accent">For People</span>
+                </h1>
+                <div class="anim-element fade-up delay-3">
+                    <p class="slide-subtitle">How Starbucks turned teamwork into a retention strategy</p>
+                </div>
+                <div class="anim-element fade-up delay-4">
+                    <div class="hero-line"></div>
+                </div>
+                <div class="anim-element fade-up delay-5">
+                    <p class="slide-quote">"Starbucks did not solve turnover with coffee alone.<br>It solved it with respectful culture plus disciplined teamwork."</p>
+                </div>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">01</div>
+        </section>
+
+        <!-- SLIDE 02 -->
+        <section class="slide" data-slide="2" data-speaker="1" data-transition="slide-left">
+            <div class="slide-bg" style="background-image: url('images/slide02.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+<h2 class="anim-element fade-up delay-2">Turnover Hurts<br><span class="text-accent">Everything</span></h2>
+                <div style="max-width: 600px;">
+                    <p class="anim-element fade-up delay-3" style="margin-bottom: 20px;">When people leave, stores lose speed, service quality, training time, and customer trust.</p>
+                    <div class="stat-row anim-element fade-up delay-4">
+                        <div class="stat-item">
+                            <div class="stat-top">
+                                <div class="stat-number counter" data-target="65">0</div>
+                                <div class="stat-suffix">%</div>
+                            </div>
+                            <div class="stat-label">Employee Turnover</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-top">
+                                <div class="stat-number counter" data-target="25">0</div>
+                                <div class="stat-suffix">%</div>
+                            </div>
+                            <div class="stat-label">Manager Turnover</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">02</div>
+        </section>
+
+        <!-- SLIDE 03 -->
+        <section class="slide" data-slide="3" data-speaker="1" data-transition="fade">
+            <div class="slide-bg" style="background-image: url('images/slide03.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+<h2 class="anim-element fade-up delay-2">A Model<br><span class="text-accent">Worth Studying</span></h2>
+                <div class="three-pillars anim-element fade-up delay-3">
+                    <div class="pillar">
+                        <div class="pillar-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <span>Employee Motivation</span>
+                    </div>
+                    <div class="pillar-connector">→</div>
+                    <div class="pillar">
+                        <div class="pillar-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+                        </div>
+                        <span>Customer Satisfaction</span>
+                    </div>
+                    <div class="pillar-connector">→</div>
+                    <div class="pillar">
+                        <div class="pillar-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <span>Teamwork Excellence</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">03</div>
+        </section>
+
+        <!-- SLIDE 04 -->
+        <section class="slide" data-slide="4" data-speaker="1" data-transition="slide-up">
+            <div class="slide-bg" style="background-image: url('images/slide04.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+<h2 class="anim-element fade-up delay-2">Formal Team,<br><span class="text-accent">Human Feel</span></h2>
+                <div style="max-width: 550px;">
+                    <div class="card-row anim-element fade-up delay-3"><span class="card-icon">📋</span><span>Defined roles &amp; schedules</span></div>
+                    <div class="card-row anim-element fade-up delay-4"><span class="card-icon">📊</span><span>Reporting lines &amp; KPIs</span></div>
+                    <div class="card-row anim-element fade-up delay-5"><span class="card-icon">❤️</span><span>Close, supportive atmosphere</span></div>
+                    <div class="card-row anim-element fade-up delay-6"><span class="card-icon">🤝</span><span>Personal connections</span></div>
+                </div>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">04</div>
+        </section>
+
+        <!-- SLIDE 05 -->
+        <section class="slide" data-slide="5" data-speaker="2" data-transition="zoom-fade">
+            <div class="slide-bg" style="background-image: url('images/slide05.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+<h2 class="anim-element fade-up delay-2">Real Teams Do<br><span class="text-accent">Real Work</span></h2>
+                <div style="max-width: 550px;">
+                    <div class="katzenbach-grid">
+                        <div class="katz-item anim-element fade-up delay-3">
+                            <div class="katz-icon">🎯</div>
+                            <div class="katz-label">Common Purpose</div>
+                        </div>
+                        <div class="katz-item anim-element fade-up delay-4">
+                            <div class="katz-icon">📐</div>
+                            <div class="katz-label">Complementary Skills</div>
+                        </div>
+                        <div class="katz-item anim-element fade-up delay-4">
+                            <div class="katz-icon">🎯</div>
+                            <div class="katz-label">Clear Goals</div>
+                        </div>
+                        <div class="katz-item anim-element fade-up delay-5">
+                            <div class="katz-icon">⚖️</div>
+                            <div class="katz-label">Mutual Accountability</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">05</div>
+        </section>
+
+        <!-- SLIDE 06 -->
+        <section class="slide" data-slide="6" data-speaker="2" data-transition="slide-left">
+            <div class="slide-bg" style="background-image: url('images/slide06.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+<h2 class="anim-element fade-up delay-2">Small Size<br><span class="text-accent">Matters</span></h2>
+                <div class="team-size-viz anim-element fade-up delay-3">
+                    <div class="team-dots optimal">
+                        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                        <div class="dot-label">3-6 per branch ✓</div>
+                    </div>
+                </div>
+                <p class="anim-element fade-up delay-4">Small groups communicate faster, notice problems earlier, and coordinate in real time.</p>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">06</div>
+        </section>
+
+        <!-- SLIDE 07 -->
+        <section class="slide" data-slide="7" data-speaker="2" data-transition="fade">
+            <div class="slide-bg" style="background-image: url('images/slide07.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+<h2 class="anim-element fade-up delay-2">Small Team,<br><span class="text-accent">Less Friction</span></h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card glass-card anim-element fade-up delay-3">
+                        <div class="benefit-icon">⚡</div>
+                        <div class="benefit-title">Less Bureaucracy</div>
+                        <div class="benefit-desc">Quick decisions, no red tape</div>
+                    </div>
+                    <div class="benefit-card glass-card anim-element fade-up delay-3">
+                        <div class="benefit-icon">🤝</div>
+                        <div class="benefit-title">Stronger Trust</div>
+                        <div class="benefit-desc">Know each other's strengths</div>
+                    </div>
+                    <div class="benefit-card glass-card anim-element fade-up delay-4">
+                        <div class="benefit-icon">🔄</div>
+                        <div class="benefit-title">Smoother Shifts</div>
+                        <div class="benefit-desc">Fewer handoff mistakes</div>
+                    </div>
+                    <div class="benefit-card glass-card anim-element fade-up delay-4">
+                        <div class="benefit-icon">👁️</div>
+                        <div class="benefit-title">Visible Accountability</div>
+                        <div class="benefit-desc">Everyone sees the work</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">07</div>
+        </section>
+
+        <!-- SLIDE 08 -->
+        <section class="slide" data-slide="8" data-speaker="2" data-transition="slide-up">
+            <div class="slide-bg" style="background-image: url('images/slide08.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+<h2 class="anim-element fade-up delay-2">Start With<br><span class="text-accent">Equal Treatment</span></h2>
+                <div style="max-width: 550px;">
+                    <div class="partner-badge anim-element scale-in delay-3">
+                        <div class="badge-apron">
+                            <div class="badge-text">PARTNER</div>
+                            <div class="badge-subtext">not "employee"</div>
+                        </div>
+                    </div>
+                    <p class="anim-element fade-up delay-4" style="margin-top: 20px;">When people feel seen as contributors rather than replaceable labor, they enter the job with more dignity and commitment.</p>
+                </div>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">08</div>
+        </section>
+
+        <!-- SLIDE 09 -->
+        <section class="slide" data-slide="9" data-speaker="3" data-transition="zoom-fade">
+            <div class="slide-bg" style="background-image: url('images/slide09.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+<h2 class="anim-element fade-up delay-2">Voice Creates<br><span class="text-accent">Ownership</span></h2>
+                <div class="voice-visual anim-element fade-up delay-3">
+                    <div class="voice-circle">
+                        <svg viewBox="0 0 200 200" class="voice-svg">
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(0,176,116,0.3)" stroke-width="2"/>
+                            <circle cx="100" cy="100" r="60" fill="none" stroke="rgba(0,176,116,0.5)" stroke-width="2" class="pulse-ring"/>
+                            <circle cx="100" cy="100" r="40" fill="none" stroke="rgba(0,176,116,0.7)" stroke-width="2" class="pulse-ring delay"/>
+                        </svg>
+                        <div class="voice-icon">🗣️</div>
+                    </div>
+                </div>
+                <p class="anim-element fade-up delay-4 slide-quote-sm">"People support what they help create."</p>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">09</div>
+        </section>
+
+        <!-- SLIDE 10 -->
+        <section class="slide" data-slide="10" data-speaker="3" data-transition="slide-left">
+            <div class="slide-bg" style="background-image: url('images/slide10.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+<h2 class="anim-element fade-up delay-2">Good Welfare<br><span class="text-accent">Keeps People</span></h2>
+                <div class="welfare-grid">
+                    <div class="welfare-item anim-element fade-up delay-3">
+                        <div class="welfare-icon">🏥</div>
+                        <div class="welfare-label">Healthcare</div>
+                    </div>
+                    <div class="welfare-item anim-element fade-up delay-3">
+                        <div class="welfare-icon">📈</div>
+                        <div class="welfare-label">Stock Options</div>
+                    </div>
+                    <div class="welfare-item anim-element fade-up delay-3">
+                        <div class="welfare-icon">🎓</div>
+                        <div class="welfare-label">Tuition Support</div>
+                    </div>
+                    <div class="welfare-item anim-element fade-up delay-4">
+                        <div class="welfare-icon">🏖️</div>
+                        <div class="welfare-label">Paid Leave</div>
+                    </div>
+                    <div class="welfare-item anim-element fade-up delay-4">
+                        <div class="welfare-icon">⏰</div>
+                        <div class="welfare-label">Flexible Hours</div>
+                    </div>
+                    <div class="welfare-item anim-element fade-up delay-4">
+                        <div class="welfare-icon">🤲</div>
+                        <div class="welfare-label">Part-time Perks</div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">10</div>
+        </section>
+
+        <!-- SLIDE 11 -->
+        <section class="slide" data-slide="11" data-speaker="3" data-transition="fade">
+            <div class="slide-bg" style="background-image: url('images/slide11.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+<h2 class="anim-element fade-up delay-2">Authority Needs<br><span class="text-accent">Support</span></h2>
+                <div style="max-width: 700px;">
+                    <div class="empowerment-chain">
+                        <div class="emp-step anim-element fade-up delay-3">
+                            <div class="emp-num">1</div>
+                            <div class="emp-text">Share Information</div>
+                        </div>
+                        <div class="emp-arrow anim-element fade-up delay-3">→</div>
+                        <div class="emp-step anim-element fade-up delay-4">
+                            <div class="emp-num">2</div>
+                            <div class="emp-text">Develop Competence</div>
+                        </div>
+                        <div class="emp-arrow" style="visibility: hidden;">→</div>
+                        <div class="emp-arrow anim-element fade-up delay-4">↓</div>
+                        <div class="emp-arrow" style="visibility: hidden;">→</div>
+                        <div class="emp-step anim-element fade-up delay-5">
+                            <div class="emp-num">3</div>
+                            <div class="emp-text">Delegate Responsibility</div>
+                        </div>
+                        <div class="emp-arrow anim-element fade-up delay-5">→</div>
+                        <div class="emp-step anim-element fade-up delay-6">
+                            <div class="emp-num">4</div>
+                            <div class="emp-text">Recognize Results</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">11</div>
+        </section>
+
+        <!-- SLIDE 12 -->
+        <section class="slide" data-slide="12" data-speaker="3" data-transition="slide-up">
+            <div class="slide-bg" style="background-image: url('images/slide12.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+<h2 class="anim-element fade-up delay-2">Review Is<br><span class="text-accent">Ongoing</span></h2>
+                <div class="dashboard-grid">
+                    <div class="dash-card glass-card anim-element fade-up delay-3">
+                        <div class="dash-icon">💬</div>
+                        <div class="dash-metric">Customer Feedback</div>
+                        <div class="dash-bar"><div class="dash-fill" style="width: 85%"></div></div>
+                    </div>
+                    <div class="dash-card glass-card anim-element fade-up delay-4">
+                        <div class="dash-icon">📉</div>
+                        <div class="dash-metric">Turnover Patterns</div>
+                        <div class="dash-bar"><div class="dash-fill" style="width: 60%"></div></div>
+                    </div>
+                    <div class="dash-card glass-card anim-element fade-up delay-5">
+                        <div class="dash-icon">🗨️</div>
+                        <div class="dash-metric">Partner Conversations</div>
+                        <div class="dash-bar"><div class="dash-fill" style="width: 75%"></div></div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">12</div>
+        </section>
+
+        <!-- SLIDE 13 -->
+        <section class="slide" data-slide="13" data-speaker="4" data-transition="zoom-fade">
+            <div class="slide-bg" style="background-image: url('images/slide13.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+<h2 class="anim-element fade-up delay-2">Leadership is<br><span class="text-accent">Visible</span></h2>
+                <div style="max-width: 600px;">
+                    <p class="anim-element fade-up delay-3">Managers work <strong>alongside</strong> frontline staff. That reduces status barriers and makes leadership visible in action.</p>
+                </div>
+                <p class="anim-element fade-up delay-4 slide-quote-sm">"Shared work builds credibility faster than speeches ever could."</p>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">13</div>
+        </section>
+
+        <!-- SLIDE 14 -->
+        <section class="slide" data-slide="14" data-speaker="4" data-transition="fade">
+            <div class="slide-bg" style="background-image: url('images/slide14.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+<h2 class="anim-element fade-up delay-2">Small Cracks<br><span class="text-accent">Become Exits</span></h2>
+                <div style="max-width: 500px;">
+                    <div class="cracks-list">
+                        <div class="crack-item anim-element fade-up delay-3"><span class="crack-num">01</span> Communication</div>
+                        <div class="crack-item anim-element fade-up delay-3"><span class="crack-num">02</span> Trust</div>
+                        <div class="crack-item anim-element fade-up delay-4"><span class="crack-num">03</span> Conflict Handling</div>
+                        <div class="crack-item anim-element fade-up delay-4"><span class="crack-num">04</span> Role Clarity</div>
+                        <div class="crack-item anim-element fade-up delay-5"><span class="crack-num">05</span> Accountability</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">14</div>
+        </section>
+
+        <!-- SLIDE 15 -->
+        <section class="slide" data-slide="15" data-speaker="4" data-transition="slide-left">
+            <div class="slide-bg" style="background-image: url('images/slide15.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+<h2 class="anim-element fade-up delay-2">Belonging. Voice. <span class="text-accent">Growth.</span></h2>
+                <div style="max-width: 650px;">
+                    <div class="motivation-circles">
+                        <div class="moti-circle anim-element fade-up delay-3">
+                            <div class="moti-icon">❤️</div>
+                            <div class="moti-title">Belonging</div>
+                            <div class="moti-desc">Partners with dignity</div>
+                        </div>
+                        <div class="moti-circle anim-element fade-up delay-4">
+                            <div class="moti-icon">💬</div>
+                            <div class="moti-title">Voice</div>
+                            <div class="moti-desc">Listened &amp; involved</div>
+                        </div>
+                        <div class="moti-circle anim-element fade-up delay-5">
+                            <div class="moti-icon">📈</div>
+                            <div class="moti-title">Growth</div>
+                            <div class="moti-desc">Skills &amp; opportunity</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">15</div>
+        </section>
+
+        <!-- SLIDE 16 -->
+        <section class="slide" data-slide="16" data-speaker="4" data-transition="zoom-fade">
+            <div class="slide-bg" style="background-image: url('images/slide16.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered ishikawa-slide">
+<h2 class="anim-element fade-up delay-2">Fishbone Diagram: <span class="text-accent">Root Causes</span></h2>
+                
+                <div class="ishikawa-container anim-element fade-up delay-3">
+                    <svg viewBox="0 0 1000 480" class="ishikawa-svg">
+                        <defs>
+                            <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feGaussianBlur stdDeviation="6" result="blur" />
+                                <feMerge>
+                                    <feMergeNode in="blur" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                            <linearGradient id="spine-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="rgba(255,255,255,0.1)" />
+                                <stop offset="50%" stop-color="rgba(0,176,116,0.6)" />
+                                <stop offset="100%" stop-color="rgba(0,176,116,1)" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Central Spine -->
+                        <g class="ik-spine-group">
+                            <line x1="50" y1="240" x2="820" y2="240.1" class="ik-spine" stroke="url(#spine-grad)" stroke-width="6" stroke-linecap="round" filter="url(#neon-glow)" />
+                            
+                            <!-- Arrow Head -->
+                            <path d="M 810 220 L 850 240 L 810 260 Z" class="ik-head" fill="rgba(0,176,116,1)" filter="url(#neon-glow)" />
+                            
+                            <!-- Head Box -->
+                            <rect x="855" y="215" width="135" height="50" rx="8" class="ik-head-box" fill="none" stroke="rgba(0,176,116,0.8)" stroke-width="2" />
+                            <text x="922" y="246" class="ik-head-text" text-anchor="middle" fill="#fff">TURNOVER</text>
+                        </g>
+
+                        <!-- Top Bone 1 -->
+                        <g class="ik-bone-group tb1">
+                            <line x1="260" y1="240" x2="140" y2="90" class="ik-bone" stroke="rgba(255,255,255,0.4)" stroke-width="3" />
+                            <circle cx="260" cy="240" r="6" fill="#00b074" class="ik-node" />
+                            <!-- Sub-bone -->
+                            <line x1="180" y1="140" x2="220" y2="140" class="ik-sub-bone" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+                            <text x="228" y="145" class="ik-sub-text" fill="rgba(255,255,255,0.6)">Poor leadership</text>
+                            
+                            <!-- Main Text -->
+                            <circle cx="140" cy="90" r="4" fill="#fff" />
+                            <text x="135" y="80" class="ik-main-text" text-anchor="end" fill="#fff">Weak Management</text>
+                        </g>
+
+                        <!-- Top Bone 2 -->
+                        <g class="ik-bone-group tb2">
+                            <line x1="500" y1="240" x2="380" y2="90" class="ik-bone" stroke="rgba(255,255,255,0.4)" stroke-width="3" />
+                            <circle cx="500" cy="240" r="6" fill="#00b074" class="ik-node" />
+                            <!-- Sub-bone -->
+                            <line x1="420" y1="140" x2="460" y2="140" class="ik-sub-bone" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+                            <text x="468" y="145" class="ik-sub-text" fill="rgba(255,255,255,0.6)">No input in decisions</text>
+                            
+                            <!-- Main Text -->
+                            <circle cx="380" cy="90" r="4" fill="#fff" />
+                            <text x="375" y="80" class="ik-main-text" text-anchor="end" fill="#fff">Low Voice</text>
+                        </g>
+
+                        <!-- Top Bone 3 -->
+                        <g class="ik-bone-group tb3">
+                            <line x1="740" y1="240" x2="620" y2="90" class="ik-bone" stroke="rgba(255,255,255,0.4)" stroke-width="3" />
+                            <circle cx="740" cy="240" r="6" fill="#00b074" class="ik-node" />
+                            <!-- Sub-bone -->
+                            <line x1="660" y1="140" x2="700" y2="140" class="ik-sub-bone" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+                            <text x="708" y="145" class="ik-sub-text" fill="rgba(255,255,255,0.6)">Unpredictable hours</text>
+                            
+                            <!-- Main Text -->
+                            <circle cx="620" cy="90" r="4" fill="#fff" />
+                            <text x="615" y="80" class="ik-main-text" text-anchor="end" fill="#fff">Stressful Schedule</text>
+                        </g>
+
+                        <!-- Bottom Bone 1 -->
+                        <g class="ik-bone-group bb1">
+                            <line x1="380" y1="240" x2="260" y2="390" class="ik-bone" stroke="rgba(255,255,255,0.4)" stroke-width="3" />
+                            <circle cx="380" cy="240" r="6" fill="#00b074" class="ik-node" />
+                            <!-- Sub-bone -->
+                            <line x1="300" y1="340" x2="340" y2="340" class="ik-sub-bone" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+                            <text x="348" y="345" class="ik-sub-text" fill="rgba(255,255,255,0.6)">No clear career path</text>
+                            
+                            <!-- Main Text -->
+                            <circle cx="260" cy="390" r="4" fill="#fff" />
+                            <text x="255" y="415" class="ik-main-text" text-anchor="end" fill="#fff">Limited Growth</text>
+                        </g>
+
+                        <!-- Bottom Bone 2 -->
+                        <g class="ik-bone-group bb2">
+                            <line x1="620" y1="240" x2="500" y2="390" class="ik-bone" stroke="rgba(255,255,255,0.4)" stroke-width="3" />
+                            <circle cx="620" cy="240" r="6" fill="#00b074" class="ik-node" />
+                            <!-- Sub-bone -->
+                            <line x1="540" y1="340" x2="580" y2="340" class="ik-sub-bone" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+                            <text x="588" y="345" class="ik-sub-text" fill="rgba(255,255,255,0.6)">Low pay & benefits</text>
+                            
+                            <!-- Main Text -->
+                            <circle cx="500" cy="390" r="4" fill="#fff" />
+                            <text x="495" y="415" class="ik-main-text" text-anchor="end" fill="#fff">Poor Rewards</text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">16</div>
+        </section>
+
+        <!-- SLIDE 17 -->
+        <section class="slide" data-slide="17" data-speaker="5" data-transition="fade">
+            <div class="slide-bg" style="background-image: url('images/slide17.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered ishikawa-slide">
+<h2 class="anim-element fade-up delay-2">Fishbone Diagram: <span class="text-accent">Solutions</span></h2>
+                
+                <div class="ishikawa-container anim-element fade-up delay-3">
+                    <svg viewBox="0 0 1000 480" class="ishikawa-svg">
+                        <defs>
+                            <filter id="neon-glow-17" x="-20%" y="-20%" width="140%" height="140%">
+                                <feGaussianBlur stdDeviation="6" result="blur" />
+                                <feMerge>
+                                    <feMergeNode in="blur" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                            <linearGradient id="spine-grad-17" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="rgba(255,255,255,0.1)" />
+                                <stop offset="50%" stop-color="rgba(0,176,116,0.6)" />
+                                <stop offset="100%" stop-color="rgba(0,176,116,1)" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Central Spine -->
+                        <g class="ik-spine-group">
+                            <line x1="50" y1="240" x2="820" y2="240.1" class="ik-spine" stroke="url(#spine-grad-17)" stroke-width="6" stroke-linecap="round" filter="url(#neon-glow-17)" />
+                            
+                            <!-- Arrow Head -->
+                            <path d="M 810 220 L 850 240 L 810 260 Z" class="ik-head" fill="rgba(0,176,116,1)" filter="url(#neon-glow-17)" />
+                            
+                            <!-- Head Box -->
+                            <rect x="855" y="215" width="135" height="50" rx="8" class="ik-head-box" fill="none" stroke="rgba(0,176,116,0.8)" stroke-width="2" />
+                            <text x="922" y="246" class="ik-head-text" text-anchor="middle" fill="#fff">RETENTION</text>
+                        </g>
+
+                        <!-- Top Bone 1 -->
+                        <g class="ik-bone-group tb1">
+                            <line x1="260" y1="240" x2="140" y2="90" class="ik-bone" stroke="rgba(255,255,255,0.4)" stroke-width="3" />
+                            <circle cx="260" cy="240" r="6" fill="#00b074" class="ik-node" />
+                            <!-- Sub-bone -->
+                            <line x1="180" y1="140" x2="220" y2="140" class="ik-sub-bone" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+                            <text x="228" y="145" class="ik-sub-text" fill="rgba(255,255,255,0.6)">Lead by example</text>
+                            
+                            <!-- Main Text -->
+                            <circle cx="140" cy="90" r="4" fill="#fff" />
+                            <text x="135" y="80" class="ik-main-text" text-anchor="end" fill="#fff">Coach, Don't Boss</text>
+                        </g>
+
+                        <!-- Top Bone 2 -->
+                        <g class="ik-bone-group tb2">
+                            <line x1="500" y1="240" x2="380" y2="90" class="ik-bone" stroke="rgba(255,255,255,0.4)" stroke-width="3" />
+                            <circle cx="500" cy="240" r="6" fill="#00b074" class="ik-node" />
+                            <!-- Sub-bone -->
+                            <line x1="420" y1="140" x2="460" y2="140" class="ik-sub-bone" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+                            <text x="468" y="145" class="ik-sub-text" fill="rgba(255,255,255,0.6)">Voice &amp; feedback</text>
+                            
+                            <!-- Main Text -->
+                            <circle cx="380" cy="90" r="4" fill="#fff" />
+                            <text x="375" y="80" class="ik-main-text" text-anchor="end" fill="#fff">Open Forums</text>
+                        </g>
+
+                        <!-- Top Bone 3 -->
+                        <g class="ik-bone-group tb3">
+                            <line x1="740" y1="240" x2="620" y2="90" class="ik-bone" stroke="rgba(255,255,255,0.4)" stroke-width="3" />
+                            <circle cx="740" cy="240" r="6" fill="#00b074" class="ik-node" />
+                            <!-- Sub-bone -->
+                            <line x1="660" y1="140" x2="700" y2="140" class="ik-sub-bone" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+                            <text x="708" y="145" class="ik-sub-text" fill="rgba(255,255,255,0.6)">Work-life balance</text>
+                            
+                            <!-- Main Text -->
+                            <circle cx="620" cy="90" r="4" fill="#fff" />
+                            <text x="615" y="80" class="ik-main-text" text-anchor="end" fill="#fff">Flexible Hours</text>
+                        </g>
+
+                        <!-- Bottom Bone 1 -->
+                        <g class="ik-bone-group bb1">
+                            <line x1="380" y1="240" x2="260" y2="390" class="ik-bone" stroke="rgba(255,255,255,0.4)" stroke-width="3" />
+                            <circle cx="380" cy="240" r="6" fill="#00b074" class="ik-node" />
+                            <!-- Sub-bone -->
+                            <line x1="300" y1="340" x2="340" y2="340" class="ik-sub-bone" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+                            <text x="348" y="345" class="ik-sub-text" fill="rgba(255,255,255,0.6)">Training &amp; promotion</text>
+                            
+                            <!-- Main Text -->
+                            <circle cx="260" cy="390" r="4" fill="#fff" />
+                            <text x="255" y="415" class="ik-main-text" text-anchor="end" fill="#fff">Career Paths</text>
+                        </g>
+
+                        <!-- Bottom Bone 2 -->
+                        <g class="ik-bone-group bb2">
+                            <line x1="620" y1="240" x2="500" y2="390" class="ik-bone" stroke="rgba(255,255,255,0.4)" stroke-width="3" />
+                            <circle cx="620" cy="240" r="6" fill="#00b074" class="ik-node" />
+                            <!-- Sub-bone -->
+                            <line x1="540" y1="340" x2="580" y2="340" class="ik-sub-bone" stroke="rgba(255,255,255,0.3)" stroke-width="2" />
+                            <text x="588" y="345" class="ik-sub-text" fill="rgba(255,255,255,0.6)">Health &amp; stock perks</text>
+                            
+                            <!-- Main Text -->
+                            <circle cx="500" cy="390" r="4" fill="#fff" />
+                            <text x="495" y="415" class="ik-main-text" text-anchor="end" fill="#fff">Real Benefits</text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">17</div>
+        </section>
+
+        <!-- SLIDE 18: 5 Whys – Start with the symptom -->
+        <section class="slide" data-slide="18" data-speaker="1" data-transition="slide-left">
+            <div class="slide-bg" style="background-image: url('images/slide_5w1.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+                <h2 class="anim-element fade-up delay-1">5 Whys:<br><span class="text-accent">The Symptom</span></h2>
+                <div class="results-stats">
+                    <div class="result-item glass-card anim-element fade-up delay-2">
+                        <div class="result-icon">📉</div>
+                        <div class="result-text"><strong>High Turnover</strong> — the visible symptom</div>
+                    </div>
+                    <div class="chain-arrow anim-element fade-up delay-3">▼</div>
+                    <div class="result-item glass-card anim-element fade-up delay-3">
+                        <div class="result-icon">❓</div>
+                        <div class="result-text">Why are employees <strong>leaving</strong>?</div>
+                    </div>
+                    <div class="chain-arrow anim-element fade-up delay-4">▼</div>
+                    <div class="result-item glass-card anim-element fade-up delay-4">
+                        <div class="result-icon">😔</div>
+                        <div class="result-text">Jobs feel <strong>tiring, replaceable</strong>, and not worth staying for</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">18</div>
+        </section>
+
+        <!-- SLIDE 19: 5 Whys – Why people disengage -->
+        <section class="slide" data-slide="19" data-speaker="2" data-transition="slide-left">
+            <div class="slide-bg" style="background-image: url('images/slide_5w2.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+                <h2 class="anim-element fade-up delay-1">5 Whys:<br><span class="text-accent">Disengagement</span></h2>
+                <div class="results-stats">
+                    <div class="result-item glass-card anim-element fade-up delay-2">
+                        <div class="result-icon">💔</div>
+                        <div class="result-text"><strong>WHY 1</strong> — People lose attachment when work feels meaningless</div>
+                    </div>
+                    <div class="result-item glass-card anim-element fade-up delay-3">
+                        <div class="result-icon">📅</div>
+                        <div class="result-text"><strong>WHY 2</strong> — Schedules feel unstable, recognition is weak</div>
+                    </div>
+                    <div class="result-item glass-card anim-element fade-up delay-4">
+                        <div class="result-icon">🔧</div>
+                        <div class="result-text"><strong>WHY 3</strong> — Staff managed as labor to control, not partners</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">19</div>
+        </section>
+
+        <!-- SLIDE 20: 5 Whys – The root cause -->
+        <section class="slide" data-slide="20" data-speaker="3" data-transition="zoom-fade">
+            <div class="slide-bg" style="background-image: url('images/slide_5w3_new.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+                <h2 class="anim-element fade-up delay-1">5 Whys:<br><span class="text-accent">Root Cause</span></h2>
+                <div class="results-stats">
+                    <div class="result-item glass-card anim-element fade-up delay-2">
+                        <div class="result-icon">🔍</div>
+                        <div class="result-text"><strong>WHY 4</strong> — Workers treated as replaceable</div>
+                    </div>
+                    <div class="result-item glass-card anim-element fade-up delay-3">
+                        <div class="result-icon">⚙️</div>
+                        <div class="result-text"><strong>WHY 5</strong> — Focus on shifts, not people</div>
+                    </div>
+                    <div class="result-item glass-card anim-element fade-up delay-4" style="border-left: 3px solid var(--color-gold-light);">
+                        <div class="result-icon">🔻</div>
+                        <div class="result-text"><strong>Root Cause:</strong> A weak people system makes workers feel unstable, unheard, and easy to replace</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">20</div>
+        </section>
+
+        <!-- SLIDE 21: 5 Whys – Turn insight into action -->
+        <section class="slide" data-slide="21" data-speaker="4" data-transition="slide-left">
+            <div class="slide-bg" style="background-image: url('images/slide_5w4.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+                <h2 class="anim-element fade-up delay-1">5 Whys:<br><span class="text-accent">Fix the System</span></h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card glass-card anim-element fade-up delay-2">
+                        <div class="benefit-icon">👨‍💼</div>
+                        <div class="benefit-title">Supportive Managers</div>
+                        <div class="benefit-desc">Coach, don't just assign</div>
+                    </div>
+                    <div class="benefit-card glass-card anim-element fade-up delay-2">
+                        <div class="benefit-icon">👂</div>
+                        <div class="benefit-title">Real Listening</div>
+                        <div class="benefit-desc">Open forums &amp; feedback</div>
+                    </div>
+                    <div class="benefit-card glass-card anim-element fade-up delay-3">
+                        <div class="benefit-icon">📈</div>
+                        <div class="benefit-title">Growth Paths</div>
+                        <div class="benefit-desc">Training &amp; promotion</div>
+                    </div>
+                    <div class="benefit-card glass-card anim-element fade-up delay-3">
+                        <div class="benefit-icon">🏆</div>
+                        <div class="benefit-title">Recognition</div>
+                        <div class="benefit-desc">Effort seen &amp; valued</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">21</div>
+        </section>
+
+
+
+        <!-- SLIDE 22 -->
+        <section class="slide" data-slide="22" data-speaker="5" data-transition="slide-left">
+            <div class="slide-bg" style="background-image: url('images/slide18.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+<h2 class="anim-element fade-up delay-2">Retention Improves<br><span class="text-accent">Service</span></h2>
+                <div class="results-stats">
+                    <div class="result-item glass-card anim-element fade-up delay-3">
+                        <div class="result-icon">📉</div>
+                        <div class="result-text">Turnover at <strong>record low</strong></div>
+                    </div>
+                    <div class="result-item glass-card anim-element fade-up delay-4">
+                        <div class="result-icon">½</div>
+                        <div class="result-text">Nearly <strong>half</strong> the industry average</div>
+                    </div>
+                    <div class="result-item glass-card anim-element fade-up delay-5">
+                        <div class="result-icon">📅</div>
+                        <div class="result-text">Most partners get <strong>preferred schedules</strong></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">22</div>
+        </section>
+
+        <!-- SLIDE 23 -->
+        <section class="slide" data-slide="23" data-speaker="5" data-transition="zoom-fade">
+            <div class="slide-bg" style="background-image: url('images/slide19.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+<h2 class="anim-element fade-up delay-2">Warm Culture,<br><span class="text-accent">Hard Discipline</span></h2>
+                <div style="max-width: 600px;">
+                    <div class="discipline-pentagon">
+                        <div class="penta-item anim-element fade-up delay-3">
+                            <div class="penta-icon">🎯</div>
+                            <div class="penta-label">Common Purpose</div>
+                        </div>
+                        <div class="penta-item anim-element fade-up delay-3">
+                            <div class="penta-icon">📌</div>
+                            <div class="penta-label">Specific Goals</div>
+                        </div>
+                        <div class="penta-item anim-element fade-up delay-4">
+                            <div class="penta-icon">🧩</div>
+                            <div class="penta-label">Complementary Skills</div>
+                        </div>
+                        <div class="penta-item anim-element fade-up delay-4">
+                            <div class="penta-icon">🤝</div>
+                            <div class="penta-label">Shared Approach</div>
+                        </div>
+                        <div class="penta-item anim-element fade-up delay-5">
+                            <div class="penta-icon">⚖️</div>
+                            <div class="penta-label">Mutual Accountability</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">23</div>
+        </section>
+
+        <!-- SLIDE 24 -->
+        <section class="slide" data-slide="24" data-speaker="5" data-transition="zoom-fade">
+            <div class="slide-bg" style="background-image: url('images/slide20.png')"></div>
+            <div class="slide-overlay overlay-dark-green"></div>
+            <div class="slide-content centered">
+                <div class="finale-badge anim-element scale-in delay-1">☕</div>
+                <h2 class="anim-element fade-up delay-2 hero-title">Our Startup<br><span class="text-accent">Lesson</span></h2>
+                <div class="finale-equation anim-element fade-up delay-3">
+                    <span class="eq-part">Respectful Culture</span>
+                    <span class="eq-plus">+</span>
+                    <span class="eq-part">Disciplined Teamwork</span>
+                    <span class="eq-equals">=</span>
+                    <span class="eq-result">Stronger Retention</span>
+                </div>
+                <div class="hero-line anim-element fade-up delay-4"></div>
+                <p class="anim-element fade-up delay-5 slide-quote">"Build a place where people can belong, contribute, grow,<br>and be accountable together."</p>
+
+            </div>
+            <div class="slide-number-big anim-element fade-right delay-2">24</div>
+        </section>
+
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="nav-controls" id="nav-controls">
+        <button id="btn-prev" class="nav-btn" aria-label="Previous slide">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button id="btn-next" class="nav-btn" aria-label="Next slide">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+    </div>
+
+    <!-- Slide Thumbnails (Mini-map) -->
+    <div id="slide-minimap">
+        <div class="minimap-toggle" id="minimap-toggle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+            </svg>
+        </div>
+        <div class="minimap-dots" id="minimap-dots"></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
